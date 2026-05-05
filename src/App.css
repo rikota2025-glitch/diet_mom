@@ -1,0 +1,230 @@
+:root {
+  font-family: "Segoe UI", system-ui, sans-serif;
+  line-height: 1.5;
+  color: #1c1917;
+  background: #fafaf9;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.app {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1.25rem 1rem 3rem;
+}
+
+h1 {
+  font-size: 1.35rem;
+  margin: 0 0 0.35rem;
+}
+
+.lead {
+  margin: 0 0 1rem;
+  color: #57534e;
+  font-size: 0.95rem;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e7e5e4;
+  border-radius: 10px;
+  padding: 1rem 1.1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 4%);
+}
+
+.card h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1.05rem;
+}
+
+.grid-form {
+  display: grid;
+  gap: 0.65rem 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+}
+
+label.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  font-size: 0.82rem;
+  color: #44403c;
+}
+
+label.field input,
+label.field select {
+  padding: 0.45rem 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #d6d3d1;
+  font-size: 0.95rem;
+}
+
+.actions {
+  margin-top: 0.75rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+button {
+  cursor: pointer;
+  border-radius: 6px;
+  border: 1px solid #d6d3d1;
+  background: #fff;
+  padding: 0.45rem 0.75rem;
+  font-size: 0.9rem;
+}
+
+button.primary {
+  background: #1c1917;
+  color: #fff;
+  border-color: #1c1917;
+}
+
+button.ghost {
+  background: transparent;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 0.5rem;
+}
+
+.stat {
+  padding: 0.5rem 0.6rem;
+  border-radius: 8px;
+  background: #f5f5f4;
+  font-size: 0.85rem;
+}
+
+.stat strong {
+  display: block;
+  font-size: 1.05rem;
+}
+
+.warn {
+  margin-top: 0.5rem;
+  padding: 0.45rem 0.55rem;
+  border-radius: 6px;
+  background: #fffbeb;
+  border: 1px solid #fcd34d;
+  font-size: 0.82rem;
+  color: #78350f;
+}
+
+.calendar-scroll {
+  max-height: 70vh;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+.month-block {
+  margin-bottom: 1.25rem;
+}
+
+.month-title {
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+  font-size: 0.95rem;
+}
+
+.week-row {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+}
+
+.dow {
+  font-size: 0.7rem;
+  color: #78716c;
+  text-align: center;
+}
+
+.day-cell {
+  min-height: 2.6rem;
+  border-radius: 6px;
+  border: 1px solid #e7e5e4;
+  background: #fff;
+  font-size: 0.8rem;
+  padding: 2px;
+}
+
+.day-cell.empty {
+  border-color: transparent;
+  background: transparent;
+}
+
+.day-cell.muted {
+  opacity: 0.35;
+}
+
+.day-cell.has-data {
+  border-color: #86efac;
+  background: #f0fdf4;
+}
+
+.day-cell button.inner {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 2px;
+  font-size: 0.78rem;
+  text-align: left;
+}
+
+.charts {
+  display: grid;
+  gap: 1rem;
+}
+
+.chart-box {
+  height: 260px;
+}
+
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgb(0 0 0 / 35%);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 1rem;
+  z-index: 40;
+}
+
+@media (min-width: 640px) {
+  .modal-backdrop {
+    align-items: center;
+  }
+}
+
+.modal {
+  width: min(440px, 100%);
+  background: #fff;
+  border-radius: 12px;
+  padding: 1rem 1.1rem 1.15rem;
+  border: 1px solid #e7e5e4;
+  box-shadow: 0 12px 40px rgb(0 0 0 / 18%);
+}
+
+.modal h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+}
+
+.fine-print {
+  font-size: 0.72rem;
+  color: #a8a29e;
+  margin-top: 2rem;
+  line-height: 1.45;
+}
