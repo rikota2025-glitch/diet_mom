@@ -133,4 +133,5 @@ npm run check
 ## 免責
 
 このアプリは教育・自己管理用の近似モデルです。**医療・栄養の助言ではありません。** 妊娠中・疾患がある・運動制限があるなどの場合は、医師や管理栄養士に相談してください。
->>>>>>> f7eb37f (first commit with contents)
+>>>>>>> f7eb37f (first commit with contents, second)
+
